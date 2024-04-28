@@ -16,9 +16,9 @@ pipeline {
 		stage('Deployment'){
 		    steps {
 			script {
-			 if ( env.ENVIRONMENT == 'QA' ){
+			 if ( env.ENVIRONMENT == 'DEV' ){
         	sh 'cp target/PIPELINE.war /home/tushar/Documents/maven_setup/apache-tomcat-9.0.88/webapps'
-        	echo "deployment has been done on QA!"
+        	echo "deployment has been done on DEV!"
 			 }
 			else ( env.ENVIRONMENT == 'UAT' ){
     		sh 'cp target/PIPELINE.war /home/tushar/Documents/maven_setup/apache-tomcat-9.0.88/webapps'
