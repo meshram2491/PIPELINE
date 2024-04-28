@@ -23,7 +23,6 @@ pipeline {
 			else ( env.ENVIRONMENT == 'UAT' ){
     		sh 'cp target/PIPELINE.war /home/tushar/Documents/maven_setup/apache-tomcat-9.0.88/webapps'
     		echo "deployment has been done on UAT!"
-                        fi
 			}
 			
 			
