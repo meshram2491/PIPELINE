@@ -18,7 +18,6 @@ pipeline {
 		        	sh 'cp target/CICD.war /home/swapnil/Documents/DevOps-Software/apache-tomcat-9.0.79/webapps'
                        	}}
                 stage('Slack') {
-                   steps {
-slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-slack', color: 'good', message: 'Welcome to Slack Integration', teamDomain: 'A1'
+                   slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-slack', color: 'good', message: 'this is slack integratin jon', teamDomain: 'A1', tokenCredentialId: 'e8953ad0-ffd4-4954-b7c7-5edbd342badd'
 }}
 }}
