@@ -19,6 +19,6 @@ pipeline {
                        	}}
                 stage('Slack') {
                    steps {
-                              slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-tool', color: 'good', message: 'this is slack integration job', teamDomain: 'A1', tokenCredentialId: 'e8953ad0-ffd4-4954-b7c7-5edbd342badd'
+                             slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'abc', color: 'good', message: 'this slack integration', teamDomain: 'A1', tokenCredentialId: 'e8953ad0-ffd4-4954-b7c7-5edbd342badd'
 }}
 }}
