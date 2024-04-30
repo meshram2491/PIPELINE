@@ -18,6 +18,6 @@ pipeline {
 		        	sh 'cp target/CICD.war /home/tushar/Documents/maven_setup/apache-tomcat-9.0.88/webapps'
                        	}}
                 stage('Slack') {
-                   slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-slack', color: 'good', message: 'this is slack integratin jon', teamDomain: 'A1', tokenCredentialId: 'e8953ad0-ffd4-4954-b7c7-5edbd342badd'
+                                 slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-slack', color: 'good', message: 'this is slack integratin jon', teamDomain: 'A1', tokenCredentialId: 'e8953ad0-ffd4-4954-b7c7-5edbd342badd'
 }}
 }}
