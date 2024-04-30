@@ -24,7 +24,7 @@ pipeline {
     		sh 'cp target/PIPELINE.war /home/tushar/Documents/maven_setup/apache-tomcat-9.0.88/webapps'
     		echo "deployment has been done on UAT!"
 
-               slackSend channel: 'devops-tool', color: 'good', message: 'welcome to Slack', teamDomain: 'A1', tokenCredentialId: 'e8953ad0-ffd4-4954-b7c7-5edbd342badd'
+               slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-slack', color: 'good', message: 'welcome to slack', teamDomain: 'A1', tokenCredentialId: 'e8953ad0-ffd4-4954-b7c7-5edbd342badd'
 			}
 			
 			
