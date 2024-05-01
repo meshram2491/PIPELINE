@@ -19,6 +19,6 @@ pipeline {
                        	}}
                 stage('Slack') {
                    steps {
-                          slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '# devops-slack', color: 'good', message: 'this is slack integration job', teamDomain: 'A1'
+                           slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#devops-tool', color: 'good', message: 'this sample slack', teamDomain: 'A1'
 }}
 }}
